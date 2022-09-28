@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+}
+
+main {
+    width: 400px;
+    background: rgb(34,195,129);
+    background: linear-gradient(0deg, rgba(34,195,129,1) 0%, rgba(253,187,45,1) 100%);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.action-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 30px;
+    margin: 4px;
+}
+
+button {
+    background-color: #f3f395;
+    font-size: 30px;
+    padding: 8px 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button.start-btn,
+button.end-btn {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

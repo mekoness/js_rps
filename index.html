@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Rock, Paper, Scissors</title>
+    </head>
+    <body>
+        <main>
+            <h1>Rock, Paper, Scissors</h1>
+            <button class="icon-btn" onclick="userRock()">✊</button>
+            <button class="icon-btn" onclick="userPaper()">✋</button>
+            <button class="icon-btn" onclick="userScissors()">✌</button>
+            <div class="action-area">
+                <p id="user-choice"></p>
+                <p>vs</p>
+                <p id="com-choice"></p>
+            </div>
+            <p id="game-text"></p>
+            <button class="start-btn" onclick="startGame()">Start Game</button>
+            <button class="end-btn" onclick="endGame()">End Game</button>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
