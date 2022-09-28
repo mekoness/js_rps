@@ -1,4 +1,5 @@
 const options = ["✊", "✋", "✌️"]
+let isPlaying = false
 let wins = 0
 let losses = 0
 let draws = 0
@@ -14,22 +15,36 @@ function comPlay() {
 }
 
 function userRock() {
+    isPlaying = true
     userChoice = "✊"
     userChoiceEl.textContent = userChoice
+    if (isPlaying === true) {
+        comPlay()
+        theGame()
+    }
 }
 
 function userPaper() {
+    isPlaying = true
     userChoice = "✋"
     userChoiceEl.textContent = userChoice
+    if (isPlaying === true) {
+        comPlay()
+        theGame()
+    }
 }
 
 function userScissors() {
+    isPlaying = true
     userChoice = "✌️"
     userChoiceEl.textContent = userChoice
+    if (isPlaying === true) {
+        comPlay()
+        theGame()
+    }
 }
 
-function startGame() {
-    comPlay()
+function theGame() {
     if (comChoice === userChoice) {
         draws ++
         gameTextEl.textContent = "Draw!"
@@ -49,10 +64,13 @@ function startGame() {
 }
 
 function endGame() {
+    isPlaying = false
     gameTextEl.textContent = "Wins: " + wins + " Losses: " + losses
     wins = 0
     losses = 0
     draws = 0
+    userChoice = ""
+    comChoice = ""
     comChoiceEl.textContent = ""
     userChoiceEl.textContent = ""
 }

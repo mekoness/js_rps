@@ -7,7 +7,8 @@
 :root {
     font-size: 16px;
     font-family: sans-serif;
-    text-shadow: 0px 0px 5px #fff;
+    text-shadow: 0px 0px 5px #f3f395;
+    ;
 }
 
 body {
@@ -15,12 +16,13 @@ body {
     margin: 0;
     font-family: 'Patrick Hand SC', cursive;
     text-align: center;
+    background-color: #202020;
 }
 
 main {
     width: 400px;
-    background: rgb(34,195,129);
-    background: linear-gradient(0deg, rgba(34,195,129,1) 0%, rgba(253,187,45,1) 100%);
+    background: #22c381;
+    background: linear-gradient(0deg, #22c381 0%, #fdbb2d 100%);
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
