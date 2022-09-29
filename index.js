@@ -1,4 +1,8 @@
-const options = ["✊", "✋", "✌️"]
+// const imgRock = document.getElementById("img-rock")
+// const imgPaper = document.getElementById("img-paper")
+// const imgScissors = document.getElementById("img-scissors")
+// const options = [imgRock, imgPaper, imgScissors]
+const options = ["💎", "📃", "✂️"]
 let isPlaying = false
 let wins = 0
 let losses = 0
@@ -16,7 +20,7 @@ function comPlay() {
 
 function userRock() {
     isPlaying = true
-    userChoice = "✊"
+    userChoice = "💎"
     userChoiceEl.textContent = userChoice
     if (isPlaying === true) {
         comPlay()
@@ -26,7 +30,7 @@ function userRock() {
 
 function userPaper() {
     isPlaying = true
-    userChoice = "✋"
+    userChoice = "📃"
     userChoiceEl.textContent = userChoice
     if (isPlaying === true) {
         comPlay()
@@ -36,7 +40,7 @@ function userPaper() {
 
 function userScissors() {
     isPlaying = true
-    userChoice = "✌️"
+    userChoice = "✂️"
     userChoiceEl.textContent = userChoice
     if (isPlaying === true) {
         comPlay()
@@ -48,13 +52,13 @@ function theGame() {
     if (comChoice === userChoice) {
         draws ++
         gameTextEl.textContent = "Draw!"
-    } else if (comChoice === "✊" && userChoice === "✋") {
+    } else if (comChoice === "💎" && userChoice === "📃") {
         wins ++
         gameTextEl.textContent = "You win!"
-    } else if (comChoice === "✋" && userChoice === "✌️") {
+    } else if (comChoice === "📃" && userChoice === "✂️") {
         wins ++
         gameTextEl.textContent = "You win!"
-    } else if (comChoice === "✌️" && userChoice === "✊") {
+    } else if (comChoice === "✂️" && userChoice === "💎") {
         wins ++
         gameTextEl.textContent = "You win!"
     } else {
