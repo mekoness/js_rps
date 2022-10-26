@@ -4,14 +4,10 @@
     box-sizing: border-box;
 }
 
-:root {
+body {
     font-size: 16px;
     font-family: sans-serif;
-    text-shadow: 0px 0px 5px #b0d3c4;
-    ;
-}
-
-body {
+    text-shadow: 2px 2px 0px #b0d3c4;
     padding: 0;
     margin: 0;
     font-family: 'Patrick Hand SC', cursive;

@@ -5,7 +5,8 @@ const playRock = document.getElementById("user-rock")
 const playPaper = document.getElementById("user-paper")
 const playScissors = document.getElementById("user-scissors")
 const endBtn = document.getElementById("end-btn")
-const options = ["💎", "📃", "✂️"];
+// const options = ["💎", "📃", "✂️"];
+const options = ["rock", "paper", "scissors"];
 let isPlaying = false;
 let wins = 0;
 let losses = 0;
@@ -16,8 +17,8 @@ let comChoice = "";
 playRock.addEventListener("click", function(){
     isPlaying = true;
     userChoice = "💎";
-    userChoiceEl.textContent = userChoice;
-    if (isPlaying === true) {
+    userChoiceEl.innerHTML = `<img src="img/rock.png">`;
+    if (isPlaying) {
         comPlay();
         theGame();
     };
@@ -26,8 +27,8 @@ playRock.addEventListener("click", function(){
 playPaper.addEventListener("click", function(){
     isPlaying = true;
     userChoice = "📃";
-    userChoiceEl.textContent = userChoice;
-    if (isPlaying === true) {
+    userChoiceEl.innerHTML = `<img src="img/paper.png">`;
+    if (isPlaying) {
         comPlay();
         theGame();
     };
@@ -36,8 +37,8 @@ playPaper.addEventListener("click", function(){
 playScissors.addEventListener("click", function(){
     isPlaying = true;
     userChoice = "✂️";
-    userChoiceEl.textContent = userChoice;
-    if (isPlaying === true) {
+    userChoiceEl.innerHTML = `<img src="img/scissors.png">`;
+    if (isPlaying) {
         comPlay();
         theGame();
     };
