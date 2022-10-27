@@ -17,7 +17,6 @@ body {
 
 main {
     width: 400px;
-    background: #22c381;
     background: linear-gradient(0deg, #22c381 0%, #2d76fd 100%);
     margin: 20px auto;
     padding: 20px;
@@ -45,17 +44,18 @@ button {
     border-radius: 5px;
 }
 
-button.start-btn,
 button.end-btn {
     font-family: 'Patrick Hand', cursive;
     font-size: 20px;
     margin-bottom: 20px;
-}
-
-button.end-btn {
     color: #666;
 }
 
 img {
     width: 50px;
+}
+
+#user-choice,
+#com-choice {
+    margin: 0 5px;
 }
