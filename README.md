@@ -1,2 +1,2 @@
 # js_rps
-Solo JavaScript Rock, Paper, Scissors Game
+The Odin Project JavaScript Rock, Paper, Scissors Game
